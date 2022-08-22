@@ -1,0 +1,529 @@
+/*single line comment*/
+/*
+Multiline
+Block comment
+*/
+/*Embedded styling*/
+/*full scteen*/
+@media(min-width:1024px){
+
+    body {
+        margin: 0;
+        background-color: #3F2860;
+        color: #404074;
+        font-family: Verdana, Arial, sans-serif;
+    }
+    
+    header {
+        background-image: url("assets/sunrise.jpg");
+        background-color: #404074;
+        color: #FFF;
+        background-size: 100% 100%;
+        font-size: 120%;
+        min-height: 200px;
+        margin-top: 50px;
+        text-align: left;
+    }
+    
+    header a:link {
+        text-decoration: none;
+        display: block;
+        color: #404074;
+    }
+    
+    header a:visited {
+        text-decoration: none;
+        display: block;
+        color: #f5f5f5;
+    }
+    
+    header a:hover {
+        text-decoration: none;
+        display: block;
+        color: #FFFFFF;
+    }
+    
+    h1 {
+        line-height: 200%;
+        padding-top: 50px;
+        padding-left: 2em;
+    }
+    
+    h2 {
+        font-size: 200%;
+    }
+    
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        text-align: right;
+        background-color: #FFFFFF;
+        margin: 0;
+        padding: .5em;
+        padding-right: 0px;
+        /*it will move dynamically to the left*/
+        width: 100%;
+        z-index: 9999;   /*ensure it is on top*/
+    }
+    
+    nav a {
+        text-decoration: none;
+        /*Remove the hyper link line*/
+        display: block;    
+    }
+    
+    nav ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        list-style-type: none;
+        /*Removes bullet points*/
+        margin: 0;
+        font-size: 1.2em;
+    }
+    
+    nav li{
+        width: 7em;
+        padding: 0 1em 0 1em;
+        display: inline ;
+    }
+    nav a:link {
+        color: #3F2860;
+    }
+    
+    nav a:visited {
+        color: #497777;
+    }
+    
+    nav a:hover {
+        color: #a26100;
+        border: 3px inset #333333;
+    }
+    
+    footer {
+        background-color: #80CBC4;
+        font-size: .60em;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        padding: 1em;
+    }
+    
+    section{
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    /*Class styling*/
+    .studio {
+        color: #404074;
+        font-style: italic;
+    }
+    
+    .home{/* when we are on the home page the header will be larger*/
+        height: 30vh;
+        padding-left: 8em;
+        padding-top: 4em;
+    }
+    
+    .content{/*when we go to toer pages the header will be slightly smaller*/
+        height: 10vh;
+        padding-left: 8em;
+        padding-top: 2em;
+    }
+    
+    /*id styling*/
+    /*purpose of this is to warp the text*/
+    #wrapper {
+        margin: auto;
+        width: 80%;
+        background-color: #f5f5f5;
+        padding: 2em;
+    }
+    
+    #mathero {
+        background-image: url("./assets/yogamat.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        height: 300px;
+        padding-bottom: 1em;
+    }
+    
+    #loungehero {
+        background-image: url("./assets/yogalounge.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        height: 300px;
+        padding-bottom: 1em;
+    }
+    
+    #mobile{
+        display: none;
+    }
+    
+    #desktop{
+        display: inline;
+    }
+    
+    #flow{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    /*global properties*/
+    * {
+        box-sizing: border-box;
+    }
+    
+    }
+    
+@media(min-width:600px){
+body {
+    margin: 0;
+    background-color: #3F2860;
+    color: #404074;
+    font-family: Verdana, Arial, sans-serif;
+}
+
+header {
+    background-image: url("assets/sunrise.jpg");
+    background-color: #404074;
+    color: #FFF;
+    background-size: 100% 100%;
+    font-size: 120%;
+    min-height: 200px;
+    margin-top: 50px;
+    text-align: left;
+}
+
+header a:link {
+    text-decoration: none;
+    display: block;
+    color: #404074;
+}
+
+header a:visited {
+    text-decoration: none;
+    display: block;
+    color: #f5f5f5;
+}
+
+header a:hover {
+    text-decoration: none;
+    display: block;
+    color: #FFFFFF;
+}
+
+/* h1 {
+    line-height: 200%;
+    padding-top: 50px;
+    padding-left: 2em;
+} */
+
+h2 {
+    font-size: 200%;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: right;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: .5em;
+    padding-right: 0px;
+    /*it will move dynamically to the left*/
+    width: 100%;
+    z-index: 9999;   /*ensure it is on top*/
+}
+
+nav a {
+    text-decoration: none;
+    /*Remove the hyper link line*/
+    display: block;    
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    list-style-type: none;
+    /*Removes bullet points*/
+    margin: 0;
+    font-size: 1.2em;
+}
+
+nav li{
+    width: 7em;
+    padding: 0 1em 0 1em;
+}
+nav a:link {
+    color: #3F2860;
+}
+
+nav a:visited {
+    color: #497777;
+}
+
+nav a:hover {
+    color: #a26100;
+    border: 3px inset #333333;
+}
+
+footer {
+    background-color: #80CBC4;
+    font-size: .60em;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
+section{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+/*Class styling*/
+.studio {
+    color: #404074;
+    font-style: italic;
+}
+
+.home{/* when we are on the home page the header will be larger*/
+    height: 20vh;
+    padding-left: 10%;
+    padding-top: 2em;
+}
+
+.content{/*when we go to toer pages the header will be slightly smaller*/
+    height: 10vh;
+    padding-left: 10%;
+    padding-top: 2em;
+}
+
+/*id styling*/
+/*purpose of this is to warp the text*/
+#wrapper {
+    background-color: #f5f5f5;
+    padding: 2em;
+}
+
+#mathero {
+    background-image: url("./assets/yogamat.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 300px;
+    padding-bottom: 1em;
+}
+
+#loungehero {
+    background-image: url("./assets/yogalounge.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    height: 300px;
+    padding-bottom: 1em;
+}
+
+#mobile{
+    display: none;
+}
+
+#desktop{
+    display: inline;
+}
+
+#flow{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#clear{
+    clear: both;
+}
+
+/*global properties*/
+* {
+    box-sizing: border-box;
+}
+
+    }
+
+@media(max-width:600px){
+        body {
+            margin: 0;
+            background-color: #3F2860;
+            color: #404074;
+            font-family: Verdana, Arial, sans-serif;
+        }
+        
+        header {
+            background-image: url("assets/sunrise.jpg");
+            background-color: #404074;
+            color: #FFF;
+            background-size: 100% 100%;
+            font-size: 120%;
+            min-height: 200px;
+            margin-top: 50px;
+            text-align: left;
+        }
+        
+        header a:link {
+            text-decoration: none;
+            display: block;
+            color: #404074;
+        }
+        
+        header a:visited {
+            text-decoration: none;
+            display: block;
+            color: #f5f5f5;
+        }
+        
+        header a:hover {
+            text-decoration: none;
+            display: block;
+            color: #FFFFFF;
+        }
+        
+        /* h1 {
+            line-height: 200%;
+            padding-top: 50px;
+            padding-left: 2em;
+        } */
+        
+        h2 {
+            font-size: 200%;
+        }
+        
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            text-align: right;
+            background-color: #FFFFFF;
+            margin: 0;
+            padding: .5em;
+            padding-right: 0px;
+            /*it will move dynamically to the left*/
+            width: 100%;
+            z-index: 9999;   /*ensure it is on top*/
+        }
+        
+        nav a {
+            text-decoration: none;
+            /*Remove the hyper link line*/
+            display: block;    
+        }
+        
+        nav ul {
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            list-style-type: none;
+            /*Removes bullet points*/
+            margin: 0;
+            font-size: 1.2em;
+        }
+        
+        nav li{
+            width: 40%;
+            display: inline;
+            padding: 0 1em 0 1em;
+        }
+        nav a:link {
+            color: #3F2860;
+        }
+        
+        nav a:visited {
+            color: #497777;
+        }
+        
+        nav a:hover {
+            color: #a26100;
+            border: 3px inset #333333;
+        }
+        
+        footer {
+            background-color: #80CBC4;
+            font-size: .60em;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+        
+        section{
+            padding-left: .5em;
+            padding-right: .5em;
+        }
+        /*Class styling*/
+        .studio {
+            color: #404074;
+            font-style: italic;
+        }
+        
+        .home{/* when we are on the home page the header will be larger*/
+            height: 20vh;
+            padding-left: 10%;
+            padding-top: 2em;
+        }
+        
+        .content{/*when we go to toer pages the header will be slightly smaller*/
+            height: 10vh;
+            padding-left: 10%;
+            padding-top: 2em;
+        }
+        
+        /*id styling*/
+        /*purpose of this is to warp the text*/
+        #wrapper {
+            background-color: #f5f5f5;
+            padding: 2em;
+        }
+/*         
+        #mathero {
+            background-image: url("./assets/yogamat.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+            height: 300px;
+            padding-bottom: 1em;
+        }
+        
+        #loungehero {
+            background-image: url("./assets/yogalounge.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: block;
+            height: 300px;
+            padding-bottom: 1em;
+        } */
+        
+        #mobile{
+            display: none;
+        }
+        
+        #desktop{ /*This is now invisible*/
+            display: inline;
+        }
+        
+        /* #flow{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        
+        #clear{
+            clear: both;
+        }
+         */
+        /*global properties*/
+        * {
+            box-sizing: border-box;
+        }
+        
+    }
