@@ -5,6 +5,16 @@ Block comment
 */
 /*Embedded styling*/
 /*full scteen*/
+form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+    margin-bottom: .5em;
+}
+input, textarea{
+    margin-bottom: auto;
+}
 table{
     width: 60%;
     border: 1px solid #3F2860;
