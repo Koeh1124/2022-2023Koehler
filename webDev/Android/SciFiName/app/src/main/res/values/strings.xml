@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SciFiName</string>
+    <string name="title">Welcome to the SciFi Name Generator</string>
+    <string name="first_name">First Name:</string>
+    <string name="first_nameTXT">First Name</string>
+    <string name="last_nameLBL">Last Name:</string>
+    <string name="last_nameTXT">Last Name</string>
+    <string name="cityLBL">City:</string>
+    <string name="cityTXT">City</string>
+    <string name="schoolLBL">School:</string>
+    <string name="schoolTXT">School</string>
+    <string name="broLBL">Bro:</string>
+    <string name="broTXT">Bro</string>
+    <string name="sisLBL">Sis:</string>
+    <string name="sisTXT">Sis</string>
+    <string name="generateBTN">GENERATE</string>
+    <string name="output">output</string>
+</resources>
