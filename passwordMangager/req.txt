@@ -1,0 +1,76 @@
+(25%) Password Manager: (partners)
+a. Requirements:
+i. Products to include:
+1. Log in to run the program including a hint and a certain many tries before the program
+shuts down.
+
+a. If the user is a first-time user, allow them to create a profile.
+i. Profile requirements is: username, password (password requirements in
+item h), first and last name
+ii. Once the user registers, require them to log in
+
+2. Method to take in user input to store Account(username,password) based on
+categories.
+
+a. Accounts must be able to be pulled based on categories.
+
+b. Each account needs to following data
+i. Name
+ii. Username
+iii. Password
+iv. Category
+
+3. Save information to a text file.
+
+4. Be able to navigate through the categories the user created
+a. Examples of categories: home, work, entertainment, bills, etc.
+b. Should be able to print out the categories in a list.
+
+5. Password generator option if the user requests. (This is the same password generator
+from our homework assignment)
+a. Half the points, include this in a method
+b. All the points, include this as a class
+
+6. Be able to delete or modify passwords.
+
+7. Output needs to be simple to understand:
+a. “The account: {accountName}
+The username: {username}
+The password: {password}”
+
+8. Need to make sure that user input and the generated passwords meet the requirements
+of the following:
+a. 1 capital character
+b. 1 number
+c. 1 special character (There are only certain special characters allowed)
+d. At least 8 characters long
+e. Half of the points, create a method to check for this
+f. All the points, create a class to check for this
+
+9. 10% Bonus: save the file as a password protected or encrypted file
+
+10. 5% Bonus: create a method that will check how long to brute force break it
+
+11. 15% Bonus: save the info on a database
+ii. Computer Science concepts to include
+1. User Input
+2. Arrays, Lists, and ArrayLists
+3. Utilizing built in functions to create the passwords and not a list of characters
+4. Loops
+
+CSA Semester 1 Final Projects
+
+5. ALL methods are commented
+6. Multiple Classes
+a. (Suggestions: PasswordRecord, Library, OpenCloseFile, etc)
+
+b. The user should not be able to create a runtime error.
+c. The usability of the program should be smooth and easy to understand.
+d. Remember that each section of code needs to be commented, and any outside sources need to be
+documented. In the documentation, you must include commentary on what you are using.
+e. MUST HAVE a design overview approved by Bander before beginning this project. In that design
+overview Bander needs to see the features, details on how to implement the features, and who is doing
+which features.
+f. If you need an example of a password manager. Install the following program and play around with it
+i. https://sourceforge.net/projects/keepass/files/KeePass%202.x/2.52/KeePass-2.52-
+Setup.exe/download

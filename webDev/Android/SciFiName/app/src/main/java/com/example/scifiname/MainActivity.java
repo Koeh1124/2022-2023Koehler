@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.util.Random;
+
 public class MainActivity extends AppCompatActivity {
     //First thing create global vars for widgets
     EditText firstNameTXT,lastNameTXT,cityTXT,schoolTXT,broTXT,sisTXT;
@@ -37,6 +39,26 @@ public class MainActivity extends AppCompatActivity {
         });
     }
     private void generate() {
+        String first = String.valueOf(firstNameTXT.getText());
+        String last = String.valueOf(lastNameTXT.getText());
+        String city = String.valueOf(cityTXT.getText());
+        String school = String.valueOf(schoolTXT.getText());
+        String brother = String.valueOf(broTXT.getText());
+        String sister = String.valueOf(sisTXT.getText());
 
+        //gen bounds for each portion of each var
+        Random rand = new Random();
+        int rF = rand.nextInt(first.length());
+        int rL = rand.nextInt(last.length());
+        int rC = rand.nextInt(city.length());
+        int rS = rand.nextInt(school.length());
+        int rB = rand.nextInt(brother.length());
+        int rSi = rand.nextInt(sister.length());
+
+        String scifiFirst = first.substring(0,rF)+last.substring(rL);
+        String scifiLast = city.substring(0,rC)+school.substring(rS);
+        String scifiHome = brother.substring(0,rB)+sister.substring(rSi);
+
+        output.setText(String.format("Welcome! %s %s from %s",scifiFirst,scifiLast,scifiHome));
     }
 }
