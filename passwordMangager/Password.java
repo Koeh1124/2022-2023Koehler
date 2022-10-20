@@ -44,7 +44,6 @@ public class Password {
         boolean num = false;
         boolean special = false;
         // check length
-        System.out.println(password);
         if (password.length() < 8) {
             // if it's less than 8 we can set to false and end the check
             this.strong = false;
@@ -78,13 +77,14 @@ public class Password {
         // generate password
         String newPass = "";
         this.password = newPass;
+        this.strong = false;
         Random rand = new Random();
-        while(!this.strong){
-            String newChar = String.valueOf((char) rand.nextInt(33,125));
-            if(newChar!="\\"){
-                newPass=newPass.concat(newChar);
+        while (!this.strong) {
+            int newCharIndex = rand.nextInt(33, 126);
+            if (newCharIndex != 92) {
+                newPass = newPass.concat(String.valueOf((char) newCharIndex));
             }
-            System.out.println(newPass);
+            this.password = newPass;
             this.checkStrength();
         }
         this.password = newPass;
@@ -97,7 +97,7 @@ public class Password {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return this.password;
     }
 }
