@@ -1,10 +1,5 @@
 import java.util.Random;
 
-/*
- * To-DO
- * Password Gen
- * To string
- */
 public class Password {
     private String password;
     private boolean strong;

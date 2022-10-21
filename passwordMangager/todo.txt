@@ -1,0 +1,18 @@
+Keenan:
+    Account Class-
+
+    Password Class-
+
+
+Nate:
+    Read\Write-
+
+    UI-
+
+
+Together(extra):
+    Encryption-
+
+    DB-
+
+    
