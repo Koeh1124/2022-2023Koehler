@@ -3,24 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/thirdLBL"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/firstUI"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="328dp"
-        android:text="@string/third_activity"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:text="@string/enter_some_info"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/thirdBTN"
+        android:id="@+id/firstBTN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="215dp"
-        android:text="GO TO FOURTH ACTIVITY"
+        android:layout_marginBottom="151dp"
+        android:text="@string/open_second_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
